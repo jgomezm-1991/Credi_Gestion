@@ -12,7 +12,7 @@ namespace Credi_Gestion.Models
         public int Id { get; set; }
 
         [Required=(ErrorMessage="El nombre del cliente es requerido")]
-        public string Cliente { get; set; }
+        public string NombreCliente { get; set; }
 
         [Required=(ErrorMessage="El número de cedula es requerido")]
         [StringLength(100,ErrorMessage ="La {0} debe tener al menos {2} y máximo {1} caracteres",MinimumLength =3)]
