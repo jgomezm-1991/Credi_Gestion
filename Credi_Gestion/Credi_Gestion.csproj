@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Cliente\**" />
+    <Content Remove="Views\Cliente\**" />
+    <EmbeddedResource Remove="Views\Cliente\**" />
+    <None Remove="Views\Cliente\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Migrations\20220212134231_m.cs" />
     <Compile Remove="Migrations\20220212134231_m.Designer.cs" />
   </ItemGroup>
@@ -17,10 +24,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Cliente\" />
   </ItemGroup>
 
 </Project>
